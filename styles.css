@@ -1,3 +1,74 @@
-*, *::before, *::after {
-    box-sizing: border-box;
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&display=swap');
+
+/* Default styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background: linear-gradient(to right, #eee7ce, #064439);
+  display: flex;
+  font-family: 'Kanit', sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* App container styles */
+.app__container {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* P element styles */
+.score {
+  font-family: 'New Amsterdam', sans-serif;
+  font-size: 1.2rem;
+  margin-top: 0;
+  text-align: right;
+}
+
+.status {
+  font-family: 'New Amsterdam', sans-serif;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Toggle hidden */
+.hidden {
+  display: none;
+}
+
+/* Input styles */
+input {
+  border: none;
+  border-radius: 5px;
+  font-family: 'Kanit', sans-serif;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Button styles */
+button {
+  background: #064439;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Kanit', sans-serif;
+  font-size: 1rem;
+  padding: 10px;
 }
