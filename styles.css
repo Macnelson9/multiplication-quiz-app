@@ -31,6 +31,25 @@ body {
   gap: 15px;
 }
 
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.reset-btn {
+  background: #064439;
+  padding: 5px 15px;
+}
+
+.game-over {
+  color: #064439;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
 /* P element styles */
 .score {
   font-family: 'New Amsterdam', sans-serif;
